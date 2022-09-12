@@ -29,6 +29,10 @@ body{
     
 }
 
+.text-align-center{
+    text-align: center;
+}
+
 .background{
     position: absolute;
     z-index: -1;
@@ -110,6 +114,7 @@ body{
 .LocationDetails{
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
     align-items: start;
     width: 90%;
     padding: 5%;

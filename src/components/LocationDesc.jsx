@@ -29,7 +29,7 @@ export function LocationDesc({locationParam}) {
           >Search</button>
         </div>
           <div>
-            <h1>{location.name}</h1>
+            <h1 className='align-text-center'>{location.name}</h1>
           </div>
           <div className='LocationDetails'>
             <p><span>Type:</span> {location.type}</p>
