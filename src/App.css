@@ -106,7 +106,7 @@ body{
 .LocationDesc{
     margin-top: 2rem;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: black;
+    background-color: #161515a1;
     color: rgb(218, 203, 203);
     width: 100%;
 }
