@@ -19,7 +19,7 @@ export function LocationDesc({locationParam}) {
           <input
             type="text"
             id="planetSearch"
-            placeholder="Search by planet"
+            placeholder="Search by ID planet"
             value={searchInput}
             onChange={change}
           />
