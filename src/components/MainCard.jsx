@@ -1,6 +1,6 @@
 import LocationDesc from './LocationDesc.jsx'
 import background from '../assets/backgroundRyM.png'
-import logo from '../assets/RyMLogo.jpg'
+import logo from '../assets/RyMLogo.png'
 export default function MainCard() {
   
   return (
