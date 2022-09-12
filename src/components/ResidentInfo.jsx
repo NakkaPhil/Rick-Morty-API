@@ -22,6 +22,7 @@ export default function ResidentInfo({urlResident}) {
         <h3>{resident.name}</h3>
         <p>Status: {resident.status}</p>
         <p>Origin: {resident.origin?.name}</p>
+        <p>Episodes where appear: {resident.episode?.length}</p>
       </div>
     </div>
   )
