@@ -10,14 +10,18 @@ export default function ResidentInfo({urlResident}) {
 
     useEffect(()=>{
         axios.get(`${urlResident}`)
-        .then(res => setResident(res.data))
+        .then((res) => {
+          setResident(res.data)
+          
+        })
 
     },[])
 
     console.log(resident)
   return (
+
     <div className='residentCard'>
-      <img src={resident.image} alt="res-img" className='resCardImg'/>
+      <img src={resident.image} alt="res-img" className='resCardImg' />
       <div className="residentDesc">
         <h3>{resident.name}</h3>
         <p>Status: {resident.status}</p>
@@ -25,5 +29,6 @@ export default function ResidentInfo({urlResident}) {
         <p>Episodes where appear: {resident.episode?.length}</p>
       </div>
     </div>
+    
   )
 }

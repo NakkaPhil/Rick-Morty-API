@@ -1,12 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
 import ResidentInfo from './ResidentInfo'
 
 export default function ResidentsCard({residents}) {
 
     const residentes = residents[0]
-
-    console.log(residentes)
     
 
   return (
@@ -15,7 +12,11 @@ export default function ResidentsCard({residents}) {
         <div className='residentsContainer'>
             {
                residentes.map((r)=>(
-                <ResidentInfo urlResident={r}/>
+                <ResidentInfo 
+                urlResident={r}
+                key={r}
+
+                />
                )) 
             }
         </div>

@@ -26,6 +26,7 @@ export function LocationDesc({locationParam}) {
           <button
             htmlFor="planetSearch"
             id="planetSearchButton"
+            
           >Search</button>
         </div>
           <div>
