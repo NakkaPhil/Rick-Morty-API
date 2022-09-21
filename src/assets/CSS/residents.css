@@ -1,0 +1,64 @@
+.residentsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+}
+@media(min-width: 768px){
+    .residentsContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.residentsCard{
+    width: 90%;
+    padding: 5% 5%;
+}
+
+.residentCard img{
+    max-width: 10rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 5px 0px 7px #261f1f;
+}
+
+@media(min-width: 768px){
+    .residentCard img{
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
+.residentCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: #4a2626;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+@media(min-width: 768px){
+    .residentCard{
+        flex-direction: row;
+        height: 10rem;
+    }
+}
+
+.residentDesc{
+    width: 100%;
+}
+
+.residentDesc h3, p, span{
+    font-family: Helvetica;
+
+}
+
+.residentDesc h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.residentDesc p{
+    font-size: 1.2rem;
+}

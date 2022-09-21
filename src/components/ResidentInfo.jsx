@@ -12,12 +12,8 @@ export default function ResidentInfo({urlResident}) {
         axios.get(`${urlResident}`)
         .then((res) => {
           setResident(res.data)
-          
         })
-
     },[])
-
-    console.log(resident)
   return (
 
     <div className='residentCard'>

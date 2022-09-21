@@ -1,0 +1,31 @@
+.header-container{
+    width: 90%;
+    padding: 0 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5rem;
+    overflow: hidden;
+}
+
+.header-card{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(7, 7, 7, 0.7);
+    padding: 1.5rem;
+    box-shadow: 1px 0px 6px rgba(7, 7, 7);
+}
+
+.header-title{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(141, 138, 138);
+}
+
+.header-input{
+    width: 90%;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    padding: 5%;
+}

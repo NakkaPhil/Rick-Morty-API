@@ -1,15 +1,18 @@
 import React, {useState} from 'react'
+import { useEffect } from 'react';
 import useAPI from '../hooks/useAPI';
 import ResidentsCard from './ResidentsCard';
 
-export function LocationDesc({locationParam}) {
+export function LocationDesc({askContentLoaded, isLoading, setIsLoading}) {
     const [searchInput, setSearchInput] = useState('')
-
+    
     const change = (e) => setSearchInput(e.target.value)
 
-    const {location, residents} = useAPI(searchInput);
-
-
+    const {location, residents, isLoaded} = useAPI(searchInput);
+    
+    useEffect(()=>{        
+        askContentLoaded(isLoaded)
+    },[isLoaded])
 
   return (
     location && (

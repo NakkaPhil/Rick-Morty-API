@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+import './assets/CSS/App.css'
 import MainCard from './components/MainCard'
 
 function App() {

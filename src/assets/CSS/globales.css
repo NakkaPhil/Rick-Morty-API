@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive ;
+}
+img{ width: 100%; }
+
+h1{ font-size: 2.6rem; }
+h2{ font-size: 2.2rem; }
+h3{ font-size: 1.8rem; }
+
+label, p{ font-size: 1.4rem; }
+
+body{
+    background-image: url(../background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.text-align-center{ text-align: center; }
