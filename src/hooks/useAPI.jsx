@@ -19,7 +19,6 @@ export function useAPI(locationParam) {
             setIsLoaded(true)
         } )
     }, [locationParam])
-
     
     return {location, residents, isLoaded}
 }

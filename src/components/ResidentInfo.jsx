@@ -4,8 +4,6 @@ import axios from 'axios'
 
 export default function ResidentInfo({urlResident}) {
 
-    
-    
     const [resident, setResident] = useState({})
 
     useEffect(()=>{

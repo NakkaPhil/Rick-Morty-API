@@ -9,7 +9,6 @@ export function LocationDesc({askContentLoaded, isLoading, setIsLoading}) {
     const change = (e) => setSearchInput(e.target.value)
 
     const {location, residents, isLoaded} = useAPI(searchInput);
-    
     useEffect(()=>{        
         askContentLoaded(isLoaded)
     },[isLoaded])
@@ -43,7 +42,6 @@ export function LocationDesc({askContentLoaded, isLoading, setIsLoading}) {
           <ResidentsCard residents={[residents]} />
         </div>
       </>
-
     )
   )
 }
